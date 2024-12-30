@@ -162,6 +162,15 @@ footer {
     position: absolute;
 }
 
+#eaboutme {
+    font-size: 3rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    color: white;
+    text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF, 0 0 30px #00FFFF, 0 0 40px #00FFFF;
+    position: absolute;
+}
+
 #gmail {
     position: absolute;
     height: 3rem;
@@ -256,6 +265,11 @@ footer {
 }
 
 .schoolpicdiv {
+    margin: 2rem;
+    align-content: center;
+}
+
+.schoolpicdiv1 {
     margin: 2rem;
     align-content: center;
 }
@@ -455,10 +469,10 @@ footer {
         display: block;
         cursor: pointer;
         margin-left: 1rem;
-        padding: 1rem;
+        padding: 0.5rem;
         border: none;
         color: white;
-        font-size: 1.5em;
+        font-size: 1rem;
         background-color: #000;
     }
 
@@ -488,12 +502,12 @@ footer {
 
     #hi {
         margin-top: 3rem;
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
     #thi_is {
         margin-top: 1rem;
-        font-size: 1rem;
+        font-size: 0.6rem;
     }
 
     #infopic {
@@ -503,7 +517,7 @@ footer {
     }
 
     .info {
-        font-size: small;
+        font-size: x-small;
     }
 
     .aboutmecontainer {
@@ -524,6 +538,10 @@ footer {
         color: white;
         text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF, 0 0 30px #00FFFF, 0 0 40px #00FFFF;
         position: absolute;
+    }
+
+    #eaboutme {
+        font-size: 1.2rem;
     }
     
     #gmail {
@@ -558,6 +576,10 @@ footer {
         align-items: center;
     }
 
+    #schoolpic {
+        width: 12rem;
+    }
+
     .schooldiv1 {
         flex-direction: column;  /* Stack .left and .right vertically on smaller screens */
         align-items: center;
@@ -565,12 +587,30 @@ footer {
     }
 
     .schooldescriptiondiv {
-        font-size: small;
+        font-size: xx-small;
         align-content: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 2rem;
     }
 
     .schooldescriptiondiv1 {
-        font-size: small;
+        font-size: xx-small;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .schoolpicdiv {
+        margin-top: 2rem;
+        align-content: center;
+    }
+
+    .schoolpicdiv1 {
+        margin-bottom: 2rem;
+        align-content: center;
     }
 
     .skillcontainer2 {
@@ -615,7 +655,7 @@ footer {
     }
 
     .extrawords {
-        font-size: small;
+        font-size: xx-small;
     }
 
     .extrawords p {
@@ -624,6 +664,18 @@ footer {
 
     .extrawords h1 {
         margin: 1rem;
+    }
+
+    .skillcontainer3 {
+        font-size: xx-small;
+    }
+
+    .skillcontainer5 {
+        font-size: xx-small;
+    }
+
+    footer {
+        font-size: xx-small;
     }
 }
 
