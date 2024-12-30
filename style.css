@@ -209,8 +209,9 @@ footer {
 }
 
 .left {
-    width: 40%;
-    display: flex;           /* Enable flexbox */
+    width: 50%;
+    flex-direction: column; 
+    display: flex;         /* Enable flexbox */
     justify-content: center; /* Center horizontally */
     align-items: center; 
 }
@@ -229,7 +230,7 @@ footer {
 }
 
 .right {
-    width: 60% ;
+    width: 50% ;
     height: 100%;
     align-content: center;
 }
@@ -271,12 +272,19 @@ footer {
 
 .schoolpicdiv1 {
     margin: 2rem;
+    text-align: justify;
     align-content: center;
 }
 
 .schooldescriptiondiv {
     padding: 2rem;
+    text-align: justify;
     align-content: center;
+}
+
+.schooldescriptiondiv h1{
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF, 0 0 30px #00FFFF, 0 0 40px #00FFFF;
 }
 
 .schooldescriptiondiv1 {
@@ -285,10 +293,15 @@ footer {
     text-align: right;
 }
 
+.schooldescriptiondiv1 h1{
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF, 0 0 30px #00FFFF, 0 0 40px #00FFFF;
+}
+
 #schoolpic {
     width: 17rem;
     border-radius: 200px;
-    border: 3px solid rgb(0, 0, 0);
+    border: 8px solid rgba(32, 32, 32, 0.556);
     transition: all 0.3s ease;
 }
 
@@ -316,15 +329,18 @@ footer {
     border-radius: 50px;
     color: white;
     display: flex;
+    align-content: center;
     overflow: hidden;
 }
 
 #extrapic {
     margin: 1rem;
+    margin-top: 4rem;
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
     min-width:250px;
-    border: 8px solid rgba(62, 62, 62, 0.482);
+    max-height: 350px;
+    border: 8px solid rgba(20, 20, 20, 0.512);
     transition: all 0.3s ease;
 }
 
@@ -337,6 +353,7 @@ footer {
 }
 
 .extrawords p{
+    text-align: justify;
     margin: 0.5rem;
 }
 
@@ -393,6 +410,7 @@ footer {
     border-radius: 50px;
     color: white;
     padding: 2rem;
+    text-align: justify;
 }
 
 .skillcontainer5 {
@@ -406,6 +424,95 @@ footer {
 
 #skilltitle {
     text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF, 0 0 30px #00FFFF, 0 0 40px #00FFFF;
+}
+
+/* Goals Container */
+
+.goalcontainer2 {
+    margin-top: 1.3rem;
+    width: 90vw;
+    background-color: rgba(92, 91, 91, 0.347);
+    border-radius: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.goal1 {
+    width: 33%;
+}
+
+.goal2 {
+    width: 33%;
+    background-color: rgba(255, 255, 255, 0.119);
+    min-height: 100%;
+}
+
+.goal3 {
+    width: 33%;
+}
+
+.goalpicdiv {
+    margin-top: 2rem;
+    justify-items: center;
+}
+
+#picss1 {
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border: 8px solid rgba(32, 32, 32, 0.556);
+    margin: 0.1rem;
+    width: 8rem;
+}
+#picss2 {
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border: 8px solid rgba(32, 32, 32, 0.556);
+    margin: 0.1rem;
+    width: 8rem;
+}
+#picss3 {
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border: 8px solid rgba(32, 32, 32, 0.556);
+    margin: 0.1rem;
+    width: 8rem;
+}
+#picss4 {
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border: 8px solid rgba(32, 32, 32, 0.556);
+    margin: 0.1rem;
+    width: 8rem;
+}
+
+.allpics {
+    transition: all 0.3s ease;
+}
+
+.allpics:hover {
+    box-shadow: 0 0 15px rgb(238, 130, 238);
+}
+
+.goaldescription {
+    margin: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.goaldescription h1{
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF, 0 0 30px #00FFFF, 0 0 40px #00FFFF;
+}
+
+.goaldescription p{
+    text-align: justify;
 }
 
 /* Mobile View */
@@ -442,6 +549,54 @@ footer {
 
     .extrawords h1 {
         margin: 1rem;
+    }
+
+    .info {
+        font-size: small;
+    }
+
+    .schooldescriptiondiv {
+        font-size: small;
+    }
+
+    .schooldescriptiondiv1 {
+        font-size: small;
+    }
+
+    .extrawords {
+        font-size: small;
+    }
+
+    .skillcontainer3 {
+        font-size: small;
+    }
+
+    .skillcontainer5 {
+        font-size: small;
+    }
+
+    .goal1 {
+        width: 100%;
+    }
+    
+    .goal2 {
+        width: 100%;
+    }
+    
+    .goal3 {
+        width: 100%;
+    }
+
+    .goaldescription {
+        font-size: small;
+    }
+
+    .goalcontainer2 {
+        flex-direction: column;
+    }
+
+    footer {
+        font-size: small;
     }
 }
 
@@ -648,6 +803,7 @@ footer {
         align-items: center;
     }
     #extrapic {
+        margin-top: 1rem;
         border-top-right-radius: 100px;
         border-bottom-right-radius: 100px;
         border-bottom-left-radius: 0px;
@@ -660,6 +816,7 @@ footer {
 
     .extrawords p {
         margin: 1rem;
+        margin-right: 1.8rem;
     }
 
     .extrawords h1 {
@@ -672,6 +829,26 @@ footer {
 
     .skillcontainer5 {
         font-size: xx-small;
+    }
+
+    .goal1 {
+        width: 100%;
+    }
+    
+    .goal2 {
+        width: 100%;
+    }
+    
+    .goal3 {
+        width: 100%;
+    }
+
+    .goaldescription {
+        font-size: xx-small;
+    }
+
+    .goalcontainer2 {
+        flex-direction: column;
     }
 
     footer {
