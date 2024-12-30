@@ -10,26 +10,83 @@
     <header>
         <div class="container">
             <nav>
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html">About Me</a></li>
                     <li><a href="education.html">Education</a></li>
                     <li><a href="extra-curricular.html">Extra Curricular</a></li>
-                    <li><a href="skills.html">Skills/Talents</a></li>
+                    <li><a href="skills.html">Hobbies</a></li>
                     <li><a href="goals.html">Goals</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="content">
-            <div class="container">
-                <h2>Skills</h2>
-                <p>This is the home page of my personal website where I share insights about myself, my achievements, and my aspirations.</p>
+    <div class="allcontainer">
+        <div class="aboutmecontainer">
+            <h1 id="aboutme">Hobbies</h1>
+            <div class="icons">
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvlqsDJBLVfVWvVpBCWtXsKBNvFwdCRrNPhXLZNXgvjczcdnWnzLzPKnQmVXbVQmPprsqV">
+                    <img src="icons/gmail.png" alt="gmail" id="gmail">
+                </a>
+                <a href="https://www.instagram.com/jonathan_labs/">
+                    <img src="icons/insta.png" alt="gmail" id="insta">
+                </a>
+                <a href="https://www.facebook.com/jonathanababatlabistejr">
+                    <img src="icons/fb.png" alt="gmail" id="fb">
+                </a>
             </div>
-        </section>
-    </main>
+        </div>
+        <div class="skillcontainer2">  
+            <div class="containers">
+                <div class="box"><img src="artworks/boyfire.jpg" alt="Mr. Labiste" id="art"></div>
+                <div class="box"><img src="artworks/dream.jpg" alt="Mr. Labiste" id="art"></div>
+                <div class="box"><img src="artworks/girlbird.jpg" alt="Mr. Labiste" id="art"></div>
+            </div>
+            <div class="containers">
+                <div class="box"><img src="artworks/landscape.jpg" alt="Mr. Labiste" id="art"></div>
+                <div class="box"><img src="artworks/sheepgirl.jpg" alt="Mr. Labiste" id="art"></div>
+                <div class="box"><img src="artworks/whalord.jpg" alt="Mr. Labiste" id="art"></div>
+            </div> 
+        </div>
+        <div class="skillcontainer3">
+                <h1 id="skilltitle">Drawing</h1>
+                <p>Drawing is my passion. I've been exposed to art since I was a child, as virtually everyone in my family is artistic. Making drawings traditionally or digitally is therapeutic for me. It helps me relax, particularly during times of stress and pressure.</p>
+        </div>
+        <div class="skillcontainer2">  
+            <div class="containers">
+                <div class="box"><img src="tabletennis/tt1.jpg" alt="Mr. Labiste" id="art"></div>
+                <div class="box"><img src="tabletennis/tt2.jpg" alt="Mr. Labiste" id="art"></div>
+                <div class="box"><img src="tabletennis/tt3.jpg" alt="Mr. Labiste" id="art"></div>
+            </div>
+            <div class="containers">
+                <div class="box"><img src="tabletennis/tt4.jpg" alt="Mr. Labiste" id="art"></div>
+                <div class="box"><img src="tabletennis/tt5.jpg" alt="Mr. Labiste" id="art"></div>
+                <div class="box"><img src="tabletennis/tt6.jpg" alt="Mr. Labiste" id="art"></div>
+            </div> 
+        </div>
+        <div class="skillcontainer3">
+                <h1 id="skilltitle">Table Tennis</h1>
+                <p>I was exposed to table tennis when I was in fifth school. Since then, I've fallen in love with the sport. Table tennis is more than just a sport for me, it is my passion. Because of table tennis, I've met lifelong friends and created many happy memories that I will surely cherish for the rest of my life.</p>
+        </div>
+        <div class="skillcontainer2">  
+            <div class="containers">
+                <div class="box"><img src="layout/1.png" alt="Mr. Labiste" id="art"></div>
+                <div class="box"><img src="layout/2.png" alt="Mr. Labiste" id="art"></div>
+                <div class="box"><img src="layout/3.png" alt="Mr. Labiste" id="art"></div>
+            </div>
+            <div class="containers">
+                <div class="box"><img src="layout/4.png" alt="Mr. Labiste" id="art"></div>
+                <div class="box"><img src="layout/5.png" alt="Mr. Labiste" id="art"></div>
+                <div class="box"><img src="layout/6.png" alt="Mr. Labiste" id="art"></div>
+            </div> 
+        </div>
+        <div class="skillcontainer5">
+            <h1 id="skilltitle">Layout</h1>
+            <p>When I first started college, I knew nothing about layouting. However, after I was admitted into EVSO-OC's student publication office, I became acquainted with it. I started as a cartoonist, but today I'm also a layout artist. My goal with every layout is to create a layout that is both coherent and visually appealing.</p>
+    </div>
+    </div>
 
     <div class="bg"></div>
     <div class="bg bg2"></div>
@@ -40,5 +97,15 @@
             <p>&copy; 2024 Portfolio by Labiste, Jonathan Jr. BSIT 2A</p>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('nav ul');
+            const hamburger = document.querySelector('.hamburger');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            hamburger.classList.toggle('active');
+        }
+    </script>
+
 </body>
 </html>

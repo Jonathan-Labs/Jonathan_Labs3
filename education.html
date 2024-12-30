@@ -10,26 +10,91 @@
     <header>
         <div class="container">
             <nav>
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html">About Me</a></li>
                     <li><a href="education.html">Education</a></li>
                     <li><a href="extra-curricular.html">Extra Curricular</a></li>
-                    <li><a href="skills.html">Skills/Talents</a></li>
+                    <li><a href="skills.html">Hobbies</a></li>
                     <li><a href="goals.html">Goals</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="content">
-            <div class="container">
-                <h2>Education</h2>
-                <p>This is the home page of my personal website where I share insights about myself, my achievements, and my aspirations.</p>
+    <div class="allcontainer">
+        <div class="aboutmecontainer">
+            <h1 id="aboutme">Education</h1>
+            <div class="icons">
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvlqsDJBLVfVWvVpBCWtXsKBNvFwdCRrNPhXLZNXgvjczcdnWnzLzPKnQmVXbVQmPprsqV">
+                    <img src="icons/gmail.png" alt="gmail" id="gmail">
+                </a>
+                <a href="https://www.instagram.com/jonathan_labs/">
+                    <img src="icons/insta.png" alt="gmail" id="insta">
+                </a>
+                <a href="https://www.facebook.com/jonathanababatlabistejr">
+                    <img src="icons/fb.png" alt="gmail" id="fb">
+                </a>
             </div>
-        </section>
-    </main>
+        </div>
+        <div class="educcontainer2">
+            <div class="schooldiv1">
+                <div class="schoolpicdiv">
+                    <img src="educ/kcs.jpg" alt="kcs" id="schoolpic">
+                </div>
+                <div class="schooldescriptiondiv">
+                    <h1>Kananga Central School</h1>
+                    <p>When I was in elementary school, I was ver stubborn. I didn't give my academics any attention. I would much rather play with my pals or watch TV at home. However, I still managed to maintain a high enough mark to be in a pilot section despite only attending classes two or three times a week.</p>
+                    <p> </p><br>
+                    <h2>Academic Award</h2>
+                    <p><strong>| Grade 1:</strong> Achiever</p>
+                    <p><strong>| Grade 2:</strong> Achiever</p>
+                    <p><strong>| Grade 3:</strong> Achiever</p>
+                    <p><strong>| Grade 4:</strong> Achiever</p>
+                    <p><strong>| Grade 5:</strong> Achiever</p>
+                    <p><strong>| Grade 6:</strong> Achiever</p>
+                </div>
+            </div>
+            <div class="schooldiv">
+                <div class="schooldescriptiondiv1">
+                    <h1>Kananga National High School</h1>
+                    <p>During my high school years, I discovered the importance of education. I worked hard to get decent scores. In addition to academics, I participated in a variety of extracurricular activities. I was also fortunate to be accepted in the Special Program for Sports which enhances not only my physical but also my mental fitness.</p>
+                    <p> </p><br>
+                    <h2>Academic Award</h2>
+                    <p><strong>| Grade 7:</strong> With Honors</p>
+                    <p><strong>| Grade 8:</strong> With Honors</p>
+                    <p><strong>| Grade 9:</strong> With High Honors</p>
+                    <p><strong>| Grade 10:</strong> With Honors</p>
+                </div>
+                <div class="schoolpicdiv">
+                    <img src="educ/knhs.jpg" alt="kcs" id="schoolpic">
+                </div>
+            </div>
+            <div class="schooldiv1">
+                <div class="schoolpicdiv">
+                    <img src="educ/shs.jpg" alt="kcs" id="schoolpic">
+                </div>
+                <div class="schooldescriptiondiv">
+                    <h1>Kananga National Senior High School</h1>
+                    <p>Throughout my senior high school, I made many wonderful memories. I entered every contest I could because I knew this would be my last year of studying at Kananga. Graduating from senior high was a bittersweet moment for me. I was glad to be finally in college, but I was also sad to leave the school I knew and loved.</p>
+                    <p> </p><br>
+                    <h2>Academic Award</h2>
+                    <p><strong>| Grade 11:</strong> With Honors</p>
+                    <p><strong>| Grade 12:</strong> With High Honors</p>
+                </div>
+            </div>
+            <div class="schooldiv">
+                <div class="schooldescriptiondiv1">
+                    <h1>Eastern Visayas State University - Ormoc Campus</h1>
+                    <p>Currently, I am a sencond year student at Eastern Visayas State University - Ormoc Campus taking up Bachelor of Science in Information Technology. I.T. was not my first choice but I have learned to love it. Even though college life is hard, I know that there is nothing that hard work, determination, and perseverance can't overcome.</p>
+                </div>
+                <div class="schoolpicdiv">
+                    <img src="educ/evsu.jpg" alt="kcs" id="schoolpic">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="bg"></div>
     <div class="bg bg2"></div>
@@ -40,5 +105,15 @@
             <p>&copy; 2024 Portfolio by Labiste, Jonathan Jr. BSIT 2A</p>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('nav ul');
+            const hamburger = document.querySelector('.hamburger');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            hamburger.classList.toggle('active');
+        }
+    </script>
+
 </body>
 </html>

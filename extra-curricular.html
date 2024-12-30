@@ -10,26 +10,56 @@
     <header>
         <div class="container">
             <nav>
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html">About Me</a></li>
                     <li><a href="education.html">Education</a></li>
                     <li><a href="extra-curricular.html">Extra Curricular</a></li>
-                    <li><a href="skills.html">Skills/Talents</a></li>
+                    <li><a href="skills.html">Hobbies</a></li>
                     <li><a href="goals.html">Goals</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="content">
-            <div class="container">
-                <h2>Extra Curricular</h2>
-                <p>This is the home page of my personal website where I share insights about myself, my achievements, and my aspirations.</p>
+    <div class="allcontainer">
+        <div class="aboutmecontainer">
+            <h1 id="aboutme">Extra-Curricular</h1>
+            <div class="icons">
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvlqsDJBLVfVWvVpBCWtXsKBNvFwdCRrNPhXLZNXgvjczcdnWnzLzPKnQmVXbVQmPprsqV">
+                    <img src="icons/gmail.png" alt="gmail" id="gmail">
+                </a>
+                <a href="https://www.instagram.com/jonathan_labs/">
+                    <img src="icons/insta.png" alt="gmail" id="insta">
+                </a>
+                <a href="https://www.facebook.com/jonathanababatlabistejr">
+                    <img src="icons/fb.png" alt="gmail" id="fb">
+                </a>
             </div>
-        </section>
-    </main>
+        </div>
+        <div class="extracontainer2">
+            <div class="extracontainer3">
+                <img src="extra/1.jpg" alt="Journalism" id="extrapic">
+                <div class="extrawords">
+                    <h1>Journalism</h1>
+                    <p>My journalism journey started when I was in elementary. Back in my elementary days, I was the student whom they sent when there were poster making or other art-related contests in school. One day, when I was in sixth grade, a teacher approached me and told me to audition for the school publication because their cartoonist has graduated. Without knowing what cartooning is, let alone journalism, I auditioned. Luckily, I was chosen, and they trained me right away because the Inter School Press Conference was fast approaching. My trainer was very passionate about carttoning. She gives me printed references and guidelines for me to study.</p>
+                    <p>The Inter School Press Conference came, and I got the first place for editorial cartooning in English. Then, in the Area School Press Conference, I got the fifth place, allowing me to advance to the Division School Press Conference. Even though I was not placed during the DSPC, I was still thankful because, for a first-timer like me, it was a great achievement</p>
+                    <p>During my high school and senior high school days, I still continued to be part of my school's respected school paper and still compete in the press conferences. </p>
+                    <p>Now in college, I am still passionate about journalism and am now part of The Observer, the school publication office of Eastern Visayas Stete University—Ormoc Campus. I am a senior cartoonist and senior layout artist. It is such a privilege to be part of this wonderful institution. </p>
+                </div>
+            </div>
+            <div class="extracontainer3">
+                <img src="extra/2.jpg" alt="Sports" id="extrapic">
+                <div class="extrawords">
+                    <h1>Sports</h1>
+                    <p>I tried many sports when I was in elementary school. Influenced by my cousin, I first tried soccer. Then I tried to do chess. I actually got to represent our school in an interschool sports event, but I lost. In my fifth grade, I was just walking around when I stumbled upon a classroom with kids playing table tennis. I was curious, so I checked it out. A teacher saw me, and she let me play; she told me that I should join them every after class, and so I did. </p>
+                    <p>I competed in our school's intramurals, and luckily I won, and I got to represent our school at the next competition, which is the triangular meet. During the triangular meet, I also placed first, which made me advance to the next stage, the area meet. I unfortunately was not placed in the area meet, but I gained a lot of experience as a first-timer in this sport.</p>
+                    <p>When I got to high school, there was a section called Special Program for Sports where student athletes were placed. I joined the tryouts for table tennis, and I was selected to be an official student athlete. Those days of training with my teammates and coach were one of the best times of my life. I made a lot of friends and created a lot of memories together.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="bg"></div>
     <div class="bg bg2"></div>
@@ -40,5 +70,15 @@
             <p>&copy; 2024 Portfolio by Labiste, Jonathan Jr. BSIT 2A</p>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('nav ul');
+            const hamburger = document.querySelector('.hamburger');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            hamburger.classList.toggle('active');
+        }
+    </script>
+
 </body>
 </html>

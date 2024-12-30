@@ -10,26 +10,79 @@
     <header>
         <div class="container">
             <nav>
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html">About Me</a></li>
                     <li><a href="education.html">Education</a></li>
                     <li><a href="extra-curricular.html">Extra Curricular</a></li>
-                    <li><a href="skills.html">Skills/Talents</a></li>
+                    <li><a href="skills.html">Hobbies</a></li>
                     <li><a href="goals.html">Goals</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="content">
-            <div class="container">
-                <h2>About</h2>
-                <p>This is the home page of my personal website where I share insights about myself, my achievements, and my aspirations.</p>
+    <div class="allcontainer">
+        <div class="aboutmecontainer">
+            <h1 id="aboutme">About Me</h1>
+            <div class="icons">
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvlqsDJBLVfVWvVpBCWtXsKBNvFwdCRrNPhXLZNXgvjczcdnWnzLzPKnQmVXbVQmPprsqV">
+                    <img src="icons/gmail.png" alt="gmail" id="gmail">
+                </a>
+                <a href="https://www.instagram.com/jonathan_labs/">
+                    <img src="icons/insta.png" alt="gmail" id="insta">
+                </a>
+                <a href="https://www.facebook.com/jonathanababatlabistejr">
+                    <img src="icons/fb.png" alt="gmail" id="fb">
+                </a>
             </div>
-        </section>
-    </main>
+        </div>
+        <div class="allcontainer2">
+            <div class="left">
+                <img src="me.jpg" alt="Mr. Labiste" id="infopic">
+            </div>
+            <div class="right">
+                <div class="info">
+                    <h1>Jonathan A. Labiste Jr</h1>
+                    <p>| Bachelor of Science in Information Technology 2A</p>
+                </div>
+    
+                <div class="info">
+                    <h2>Contact Information</h2>
+                    <p><strong>| Email:</strong> labistejonathanjr@gmail.com</p>
+                    <p><strong>| Phone:</strong> +639647483004</p>
+                    <p><strong>| Location:</strong> Kananga, Leyte, Philippines</p>
+                </div>
+                
+                <div class="info">
+                    <h2>Basic Info</h2>
+                    <p><strong>| Birth date:</strong> April 19, 2003</p>
+                    <p><strong>| Age:</strong> 21</p>
+                    <p><strong>| Height:</strong> 160cm</p>
+                    <p><strong>| Weight:</strong> 55kg</p>
+                    <p><strong>| Religion:</strong> Seventh Day Adventist</p>
+                </div>
+                
+                <div class="info">
+                    <h2>Education</h2>
+                    <p><strong>| Elementary:</strong> Kananga Central School</p>
+                    <p><strong>| High School:</strong> Kananga National Senior High School</p>
+                    <p><strong>| Senior High School:</strong>  Kananga National Senior High School</p>
+                    <p><strong>| College:</strong> Eastern Visayas State University - Ormoc Campus</p>
+                </div>
+                
+                <div class="info">
+                    <h2>Skills</h2>
+                    <p>| Basics of C</p>
+                    <p>| Basics of Python and Database</p>
+                    <p>| Basics of HTML, CSS, and JavaScript</p>
+                    <p>| Traditional Drawing</p>
+                    <p>| Digital Drawing</p>
+                </div>
+            </div>     
+        </div>
+    </div>
 
     <div class="bg"></div>
     <div class="bg bg2"></div>
@@ -40,5 +93,15 @@
             <p>&copy; 2024 Portfolio by Labiste, Jonathan Jr. BSIT 2A</p>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('nav ul');
+            const hamburger = document.querySelector('.hamburger');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            hamburger.classList.toggle('active');
+        }
+    </script>
+
 </body>
 </html>

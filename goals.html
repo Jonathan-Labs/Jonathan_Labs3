@@ -10,26 +10,38 @@
     <header>
         <div class="container">
             <nav>
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html">About Me</a></li>
                     <li><a href="education.html">Education</a></li>
                     <li><a href="extra-curricular.html">Extra Curricular</a></li>
-                    <li><a href="skills.html">Skills/Talents</a></li>
+                    <li><a href="skills.html">Hobbies</a></li>
                     <li><a href="goals.html">Goals</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="content">
-            <div class="container">
-                <h2>Goals</h2>
-                <p>This is the home page of my personal website where I share insights about myself, my achievements, and my aspirations.</p>
+    <div class="allcontainer">
+        <div class="aboutmecontainer">
+            <h1 id="aboutme">Goals</h1>
+            <div class="icons">
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvlqsDJBLVfVWvVpBCWtXsKBNvFwdCRrNPhXLZNXgvjczcdnWnzLzPKnQmVXbVQmPprsqV">
+                    <img src="icons/gmail.png" alt="gmail" id="gmail">
+                </a>
+                <a href="https://www.instagram.com/jonathan_labs/">
+                    <img src="icons/insta.png" alt="gmail" id="insta">
+                </a>
+                <a href="https://www.facebook.com/jonathanababatlabistejr">
+                    <img src="icons/fb.png" alt="gmail" id="fb">
+                </a>
             </div>
-        </section>
-    </main>
+        </div>
+        <div class="allcontainer2">
+            
+        </div>
+    </div>
 
     <div class="bg"></div>
     <div class="bg bg2"></div>
@@ -40,5 +52,15 @@
             <p>&copy; 2024 Portfolio by Labiste, Jonathan Jr. BSIT 2A</p>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('nav ul');
+            const hamburger = document.querySelector('.hamburger');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            hamburger.classList.toggle('active');
+        }
+    </script>
+
 </body>
 </html>
